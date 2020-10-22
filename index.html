@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- <div class="score"></div> -->
@@ -14,7 +15,10 @@
     <div class="wrapper">
         <div id="start-element" class="start">
             <h1>Coding Quiz!</h1>
-            <p>Rules are...</p>
+            <p>Rules are as follows:</p>
+            <p>After you click on your answer, you will proceed to the next question.</p>
+            <p>If you miss an answer, your time will be subtracted in the timer.</p>
+            <p>You have 50 seconds at the start of the quiz.</p>
             <button id="start-now">Start now!</button>
         </div>
         <div id="questions" class="hide">
@@ -28,37 +32,7 @@
         </div>
     </div>
 
-
-    <!-- <div id="buttonList">
-        <button>
-            Hello
-        </button>
-        <button>
-            Bye
-        </button>
-    </div> -->
-    <!-- <article class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
-      </div>
-    </article> -->
-    <script src="script.js"></script>
-    <script src= "app.js"></script>
+    <script src="js/app.js"></script>
+    <script src= "js/questions.js"></script>
 </body>
 </html>
