@@ -1,11 +1,5 @@
-// var questionList = document.getElementById(questionList) 
-// // var event = prompt(questionList)
-// var startNowEl = document.getElementById("start-element")
-//     startNowEl.addEventListener("click", function(event){
-//         // console.log("Starting...")
-//         console.log(event.target.textContent)
-//     })
- 
+var startBtn = document.querySelector("#start-now")
+startBtn.addEventListener("click", function () { 
 
 var timerCount = 50
 var timerEl = document.querySelector("#time")
@@ -18,5 +12,15 @@ var timer = window.setInterval(function() {
 
     if (timerCount === 0) {
         clearInterval(timer)
-    }
-}, 500)
+        alert("Time is up!")
+    } 
+}, 1000)
+
+})
+
+var inputInitials = document.querySelector("#input-form");
+inputInitials.addEventListener("#submit", function(e) {
+    e.preventDefault()
+    var inputText = input.value;
+    console.log(inputText.value)
+})

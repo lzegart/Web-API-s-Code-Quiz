@@ -1,27 +1,39 @@
-var questionList = [
+var questions = [
     {
-        question: "What is a function?",
-        answerArray: ["1. Any number of characters stored together", "2. A reusable block of code", "3. A collection of data", "4. Something that stores keys and values"],
-        correctAnswer: "2. A reusable block of code",
+        q: "What is a function?",
+        choices: ["1. Any number of characters stored together", "2. A reusable block of code", "3. A collection of data", "4. Something that stores keys and values"],
+        a: "2. A reusable block of code",
     },
     {
-        question: "How does a while loop work?",
-        answerArray: ["1. It continues until it reaches a true value", "2. It doesn't have a set ending", "3. It happens at least once", "4. All of the above"],
-        correctAnswer: "4. All of the above",
+        q: "How does a while loop work?",
+        choices: ["1. It continues until it reaches a true value", "2. It doesn't have a set ending", "3. It happens at least once", "4. All of the above"],
+        a: "4. All of the above",
     },
     {
-        question: "Which of the following is not a loop?",
-        answerArray: ["1. Array loop", "2. While loop", "3. Do while loop", "4. For loop"],
-        correctAnswer: "1. Array loop",
+        q: "Which of the following is not a loop?",
+        choices: ["1. Array loop", "2. While loop", "3. Do while loop", "4. For loop"],
+        a: "1. Array loop",
     },
     {
-        question: "ParceInt works by...",
-        answerArray: ["1. Assigning a value", "2. Binding the variable to the lexical scope", "3. Assigning a boolean", "4. Defining and disecting the numbers into a string"],
-        correctAnswer: "4. Defining and disecting the numbers into a string",
+        q: "ParceInt works by...",
+        choices: ["1. Assigning a value", "2. Binding the variable to the lexical scope", "3. Assigning a boolean", "4. Defining and disecting the numbers into a string"],
+        a: "4. Defining and disecting the numbers into a string",
     },
     {
-        question: "What does var.length represent?",
-        answerArray: ["1. Adding a value to the var", "2. The amount of vars in an array", "3. The length of the var", "4. Assigning a length to the var"],
-        correctAnswer: "2. The amount of vars in an array",
+        q: "What does var.length represent?",
+        choices: ["1. Adding a value to the var", "2. The amount of vars in an array", "3. The length of the var", "4. Assigning a length to the var"],
+        a: "2. The amount of vars in an array",
     },
 ];
+
+var currentQuestion = 0;
+var choices = 0;
+var answer = 0;
+
+var startBtn = document.querySelector("#start-now");
+startBtn.addEventListener("click", function() {
+    console.log("I've been clicked")
+    // function startQuestions() {
+    //     var firstQ = 
+    // }
+}) 
