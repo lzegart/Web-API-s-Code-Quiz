@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <div class="score"></div> -->
-    <!-- <div class="timer">
-        <span></span>
-    </div> -->
+    <div class="high-score">
+        <button id= "high-score-btn">High Scores</button>
+    </div>
+
+    <div class="timer">
+        <p> Time remaining: <span id="time"></span></p>
+    </div>
 
     <div class="wrapper">
         <div id="start-element" class="start">
@@ -21,14 +24,17 @@
             <p>You have 50 seconds at the start of the quiz.</p>
             <button id="start-now">Start now!</button>
         </div>
+
         <div id="questions" class="hide">
             <h2 id="question-title"></h2>
             <div class="choices"></div>
         </div>
+
         <div id="end-element" class="hide">
-            <h2>The test is over. Great job!</h2>
+            <h2>The test is over. Great job...</h2>
             <p>Your score is <span id="score"></span>!</p>
-            <!-- paragraph tag with input tag and button for submit so user can add their name -->
+            <p>Input initials: <input></input></p>
+            <button id="submit">Submit</button>
         </div>
     </div>
 
