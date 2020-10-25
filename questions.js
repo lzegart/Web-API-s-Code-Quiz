@@ -26,14 +26,16 @@ var questions = [
     },
 ];
 
-var currentQuestion = 0;
-var choices = 0;
-var answer = 0;
+// var currentQuestion = 0;
+// var choices = 0;
+// var answer = 0;
 
 var startBtn = document.querySelector("#start-now");
 startBtn.addEventListener("click", function() {
     console.log("I've been clicked")
-    // function startQuestions() {
-    //     var firstQ = 
-    // }
+    function startQuestions(arr) {
+        var firstQ = q[0]
+        var choices = choices
+        var result = a
+    }
 }) 
