@@ -26,16 +26,27 @@ var questions = [
     },
 ];
 
-// var currentQuestion = 0;
+// questions.q = 
 // var choices = 0;
-// var answer = 0;
+// questions.a = answer
 
 var startBtn = document.querySelector("#start-now");
 startBtn.addEventListener("click", function() {
     console.log("I've been clicked")
-    function startQuestions(arr) {
-        var firstQ = q[0]
-        var choices = choices
-        var result = a
+    var startEl = document.querySelector ("#start-elements");
+    
+    // questions.forEach()
+    for (let i = 0; i < questions.length; i++) {
+        console.log(questions[i]);
+        // display = questions.q[i] 
+        // questions.choices
+        // questions.a
+
     }
+
+    // function startQuestions(arr) {
+    //     var firstQ = q[0]
+    //     var choices = choices
+    //     var result = a
+    // }
 }) 
