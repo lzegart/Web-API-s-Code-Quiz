@@ -25,28 +25,3 @@ var questions = [
         a: "2. The amount of vars in an array",
     },
 ];
-
-// questions.q = 
-// var choices = 0;
-// questions.a = answer
-
-var startBtn = document.querySelector("#start-now");
-startBtn.addEventListener("click", function() {
-    console.log("I've been clicked")
-    var startEl = document.querySelector ("#start-elements");
-    
-    // questions.forEach()
-    for (let i = 0; i < questions.length; i++) {
-        console.log(questions[i]);
-        // display = questions.q[i] 
-        // questions.choices
-        // questions.a
-
-    }
-
-    // function startQuestions(arr) {
-    //     var firstQ = q[0]
-    //     var choices = choices
-    //     var result = a
-    // }
-}) 
