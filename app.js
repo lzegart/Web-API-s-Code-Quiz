@@ -33,9 +33,6 @@ startBtn.addEventListener("click", function () {
     questionsEl.classList.remove("hide");
 
     displayQuestion()
-    // for (let i = 0; i < questions.length; i++) {
-
-    // }
 })
 
 var currentQ = 0
@@ -82,6 +79,12 @@ var submitInitials = document.querySelector("#submit");
 submitInitials.addEventListener("click", function() {
     // e.preventDefault()
     console.log(inputText.value)
-    // localStorage.setItem("initials", input.val());
+    localStorage.setItem("initials", inputText);
+    localStorage.setItem("score", currentHighScore)
 })
 
+var highScoreList = document.querySelector("#high-score-btn")
+highScoreList.addEventListener("click", function (event) {
+    console.log("scores")
+    alert(highScoreList)
+})
