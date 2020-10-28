@@ -70,17 +70,23 @@ choicesList.addEventListener("click", function(event) {
     }
 })
 
-// var initialsChoices = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 // var userInitials = [];
 var inputText = document.querySelector("#input-form");
 var submitInitials = document.querySelector("#submit");
-// userInitials.push(initialsChoices)
+// inputText.push(initialsChoices)
 
+var highScores = JSON.parse(window.localStorage.getItem("highScores")) || [];
+var newScore = {
+    score: time 
+    // initials: initials
+};
 submitInitials.addEventListener("click", function() {
     // e.preventDefault()
+    highScores.push(newScore)
     console.log(inputText.value)
-    localStorage.setItem("initials", inputText);
-    localStorage.setItem("score", currentHighScore)
+    window.localStorage.setItem("initials", JSON.stringify(inputText));
+    window.localStorage.setItem("score", JSON.stringify(currentHighScore))
+    console.log(currentHighScore)
 })
 
 var highScoreList = document.querySelector("#high-score-btn")
