@@ -112,13 +112,13 @@ submitInitials.addEventListener("click", function () {
 
 var highScoreList = document.querySelector("#high-score-btn")
 highScoreList.addEventListener("click", function (event) {
-    // console.log("scores")
-    // alert(highScoreList)
     // window.localStorage.getItem("initials", JSON.stringify(inputText.value));
     // window.localStorage.getItem("score", JSON.stringify(currentHighScore));
  
     var highScoresArray = JSON.parse(window.localStorage.getItem("highScores")) || [];
     console.log(highScoresArray)
+
+    // alert(highScoresArray)
 
     // TODO: use a for loop to display all the scores and append them to the html
 })
